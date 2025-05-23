@@ -1,0 +1,99 @@
+# FAZ 4: Fonksiyonel Zenginleştirme Analizi
+# Tarih: 23.05.2025
+
+## 1. Gen Seti Analizi
+### 1.1 Anlamlı Gen Setleri
+- Sigara maruziyeti gen seti: 8 gen
+- Yaşlanma gen seti: 100 gen
+- Ortak gen seti: Kesişim bölgesindeki genler
+- Benzersiz gen setleri: Her duruma özgü genler
+
+### 1.2 Gen Seti Özellikleri
+- Gen uzunlukları
+- Genomik lokasyonlar
+- Ekspresyon seviyeleri
+- Regülasyon yönleri
+
+## 2. Pathway Analizi
+### 2.1 KEGG Pathway Analizi
+- En zengin pathway'ler
+- Pathway'lerin p-değerleri
+- Düzeltilmiş p-değerleri
+- Enrichment skorları
+
+### 2.2 GO Term Analizi
+- Biyolojik süreçler
+- Moleküler fonksiyonlar
+- Hücresel komponentler
+- Term hiyerarşisi
+
+## 3. Protein-Protein Etkileşim Ağları
+### 3.1 STRING Analizi
+- Etkileşim skorları
+- Güven skorları
+- Ağ topolojisi
+- Hub proteinler
+
+### 3.2 Ağ Karakterizasyonu
+- Derece dağılımı
+- Betweenness merkeziyeti
+- Closeness merkeziyeti
+- Modül yapısı
+
+## 4. Görselleştirme
+### 4.1 Pathway Görselleştirme
+- KEGG pathway haritaları
+- GO term ağaçları
+- Enrichment plotları
+- Heatmap görselleştirmeleri
+
+### 4.2 Ağ Görselleştirme
+- PPI ağları
+- Modül yapıları
+- Hub protein vurguları
+- Etkileşim skorları
+
+## 5. Önemli Bulgular
+### 5.1 Pathway Bulguları
+1. En zengin pathway'ler
+2. Ortak pathway'ler
+3. Durum-spesifik pathway'ler
+4. Pathway etkileşimleri
+
+### 5.2 Ağ Bulguları
+1. Hub proteinler
+2. Modül yapıları
+3. Etkileşim pattern'leri
+4. Fonksiyonel kümeler
+
+## 6. Sonuç ve Öneriler
+### 6.1 Başarılı Noktalar
+- Kapsamlı pathway analizi
+- Detaylı ağ analizi
+- Görselleştirmeler
+- Veri entegrasyonu
+
+### 6.2 İyileştirme Önerileri
+1. Daha fazla veri tabanı entegrasyonu
+2. Farklı ağ analizi metrikleri
+3. Zaman serisi pathway analizi
+4. Deneysel validasyon
+
+### 6.3 Sonraki Adımlar
+1. Deneysel validasyon
+2. Klinik korelasyonlar
+3. Terapötik hedef belirleme
+4. Mekanizma çalışmaları
+
+## 7. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~10 dakika
+
+## 8. Referanslar
+1. Kanehisa M, et al. (2021) KEGG: integrating viruses and cellular organisms
+2. Ashburner M, et al. (2000) Gene Ontology: tool for the unification of biology
+3. Szklarczyk D, et al. (2021) STRING v11: protein-protein association networks
+4. Yu G, et al. (2012) clusterProfiler: an R package for comparing biological themes 

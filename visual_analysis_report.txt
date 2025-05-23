@@ -1,0 +1,85 @@
+# Görsel Analiz Raporu
+# Tarih: 23.05.2025
+
+## 1. Top 50 Gen Isı Haritası (top50_genes_heatmap.png/pdf)
+### 1.1 Metodoloji
+Bu görselleştirme, DESeq2 analizi sonucunda elde edilen en anlamlı 50 genin ekspresyon profillerini hiyerarşik kümeleme yöntemiyle sunmaktadır. Veriler, varyans stabilizasyon transformasyonu (VST) uygulanarak normalize edilmiş ve pheatmap paketi kullanılarak görselleştirilmiştir.
+
+### 1.2 Bulgular
+- Gen ekspresyon değerleri z-skor standardizasyonu ile normalize edilmiştir
+- Hiyerarşik kümeleme, Ward.D2 metodu kullanılarak gerçekleştirilmiştir
+- Renk skalası, mavi (düşük ekspresyon) ile kırmızı (yüksek ekspresyon) arasında değişmektedir
+- Örnek grupları arasında belirgin ekspresyon farklılıkları gözlemlenmiştir
+
+### 1.3 Yorum
+Isı haritası, gen ekspresyon profillerinin örnek grupları arasındaki farklılıkları açıkça göstermektedir. Özellikle üst kısımda kümelenen genlerin, kontrol grubuna göre deneysel grupta yüksek ekspresyon gösterdiği görülmektedir.
+
+## 2. Detaylı Volkano Grafiği (detailed_volcano_plot.png/pdf)
+### 2.1 Metodoloji
+Volkano grafiği, gen ekspresyon değişimlerinin istatistiksel anlamlılığını ve biyolojik önemini görselleştirmektedir. X ekseni log2 fold change değerlerini, y ekseni ise -log10 dönüştürülmüş p-değerlerini göstermektedir.
+
+### 2.2 Bulgular
+- Anlamlı genler (padj < 0.05) kırmızı renkle işaretlenmiştir
+- Log2 fold change eşik değeri ±1 olarak belirlenmiştir
+- Yüksek anlamlılık gösteren genler grafiğin üst kısmında konumlanmıştır
+- Biyolojik olarak önemli genler sağ ve sol uçlarda kümelenmiştir
+
+### 2.3 Yorum
+Volkano grafiği, gen ekspresyon değişimlerinin hem istatistiksel anlamlılığını hem de biyolojik önemini değerlendirmemizi sağlamaktadır. Özellikle sağ üst ve sol üst kadranlarda bulunan genler, hem istatistiksel olarak anlamlı hem de biyolojik olarak önemli değişimler göstermektedir.
+
+## 3. DEG Karşılaştırma Venn Diyagramı (deg_comparison_venn.png/pdf)
+### 3.1 Metodoloji
+Venn diyagramı, farklı karşılaştırma grupları arasındaki ortak ve özgün diferansiyel eksprese genleri (DEG) göstermektedir. VennDiagram paketi kullanılarak oluşturulmuştur.
+
+### 3.2 Bulgular
+- Her bir karşılaştırma grubu için anlamlı genler (padj < 0.05) belirlenmiştir
+- Gruplar arası kesişimler ve özgün genler görselleştirilmiştir
+- Kesişim bölgelerindeki gen sayıları ve oranları hesaplanmıştır
+- Özgün genlerin fonksiyonel özellikleri değerlendirilmiştir
+
+### 3.3 Yorum
+Venn diyagramı, farklı karşılaştırma grupları arasındaki gen ekspresyon değişimlerinin örtüşme ve farklılıklarını açıkça göstermektedir. Kesişim bölgelerindeki genler, ortak biyolojik süreçleri temsil ederken, özgün genler spesifik koşullara özgü yanıtları yansıtmaktadır.
+
+## 4. Ortak Gen Ekspresyon Profili (shared_genes_expression.png/pdf)
+### 4.1 Metodoloji
+Bu görselleştirme, farklı karşılaştırma grupları arasında ortak olan genlerin ekspresyon profillerini göstermektedir. Veriler, ggplot2 paketi kullanılarak kutu grafiği (boxplot) formatında sunulmuştur.
+
+### 4.2 Bulgular
+- Ortak genlerin ekspresyon değerleri normalize edilmiştir
+- Her bir karşılaştırma grubu için ayrı kutu grafikleri oluşturulmuştur
+- İstatistiksel anlamlılık testleri uygulanmıştır
+- Ekspresyon değişimlerinin yönü ve büyüklüğü değerlendirilmiştir
+
+### 4.3 Yorum
+Ortak gen ekspresyon profili, farklı karşılaştırma grupları arasında tutarlı değişim gösteren genleri tanımlamaktadır. Bu genler, biyolojik süreçlerdeki temel değişimleri yansıtmakta ve potansiyel biyobelirteçler olarak değerlendirilebilir.
+
+## 5. Genel Değerlendirme
+### 5.1 Metodolojik Güçlükler
+- Veri normalizasyonu ve standardizasyonu
+- İstatistiksel eşik değerlerinin belirlenmesi
+- Görselleştirme parametrelerinin optimizasyonu
+- Çoklu karşılaştırma düzeltmeleri
+
+### 5.2 Biyolojik Önem
+- Gen ekspresyon değişimlerinin biyolojik anlamı
+- Fonksiyonel zenginleştirme analizleri
+- Yolak analizleri
+- Klinik korelasyonlar
+
+### 5.3 Gelecek Yönelimler
+- Daha detaylı fonksiyonel analizler
+- Klinik validasyon çalışmaları
+- Mekanistik çalışmalar
+- Terapötik hedef belirleme
+
+## 6. Teknik Notlar
+- R versiyonu: 4.5.0
+- Kullanılan paketler: DESeq2, ggplot2, pheatmap, VennDiagram
+- Görselleştirme formatları: PNG ve PDF
+- Çözünürlük: 300 DPI
+
+## 7. Referanslar
+1. Love MI, et al. (2014) Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2
+2. Wickham H (2016) ggplot2: Elegant Graphics for Data Analysis
+3. Kolde R (2019) pheatmap: Pretty Heatmaps
+4. Chen H, Boutros PC (2011) VennDiagram: a package for the generation of highly-customizable Venn and Euler diagrams in R 

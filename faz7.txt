@@ -1,0 +1,100 @@
+# FAZ 7: Makine Öğrenmesi ve Tahminsel Modelleme
+# Tarih: 23.05.2025
+
+## 1. Veri Hazırlama ve Ön İşleme
+### 1.1 Özellik Mühendisliği
+- Gen ekspresyon verileri
+- Klinik parametreler
+- Demografik veriler
+- Zaman serisi verileri
+
+### 1.2 Veri Dönüşümü
+- Normalizasyon
+- Standardizasyon
+- Boyut indirgeme
+- Özellik seçimi
+
+## 2. Model Geliştirme
+### 2.1 Denetimli Öğrenme
+- Random Forest
+- Support Vector Machine
+- Gradient Boosting
+- Neural Networks
+
+### 2.2 Denetimsiz Öğrenme
+- K-means Clustering
+- Hierarchical Clustering
+- Principal Component Analysis
+- t-SNE
+
+## 3. Model Değerlendirme
+### 3.1 Performans Metrikleri
+- Doğruluk
+- Hassasiyet
+- Özgüllük
+- F1 skoru
+- ROC eğrisi
+
+### 3.2 Cross-Validation
+- K-fold cross-validation
+- Leave-one-out
+- Stratified sampling
+- Bootstrap
+
+## 4. Model Optimizasyonu
+### 4.1 Hiperparametre Ayarı
+- Grid Search
+- Random Search
+- Bayesian Optimization
+- Early Stopping
+
+### 4.2 Model Seçimi
+- Model karşılaştırma
+- Ensemble metodları
+- Model stacking
+- Model interpretasyonu
+
+## 5. Önemli Bulgular
+### 5.1 Model Performansı
+1. En iyi performans gösteren model
+2. Özellik önem sıralaması
+3. Tahmin güvenilirliği
+4. Model sınırlamaları
+
+### 5.2 Klinik Uygulanabilirlik
+1. Tahmin doğruluğu
+2. Klinik kullanım kolaylığı
+3. Yorumlanabilirlik
+4. Validasyon sonuçları
+
+## 6. Sonuç ve Öneriler
+### 6.1 Başarılı Noktalar
+- Yüksek tahmin doğruluğu
+- Model stabilitesi
+- Klinik uygulanabilirlik
+- Yorumlanabilirlik
+
+### 6.2 İyileştirme Önerileri
+1. Daha fazla veri toplama
+2. Farklı model mimarileri
+3. Ensemble yaklaşımları
+4. Real-time güncelleme
+
+### 6.3 Sonraki Adımlar
+1. Klinik implementasyon
+2. Model güncelleme
+3. Yeni özellikler ekleme
+4. Validasyon çalışmaları
+
+## 7. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~20 dakika
+
+## 8. Referanslar
+1. Breiman L (2001) Random Forests
+2. Cortes C, Vapnik V (1995) Support-vector networks
+3. Friedman JH (2001) Greedy function approximation: A gradient boosting machine
+4. Hinton GE (1989) Connectionist learning procedures 

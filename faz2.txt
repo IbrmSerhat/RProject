@@ -1,0 +1,88 @@
+# FAZ 2: Single-Cell Veri Analizi ve Hücre Tipi Eşleştirme
+# Tarih: 23.05.2025
+
+## 1. Mock Single-Cell Veri Analizi
+### 1.1 Veri Seti Özellikleri
+- Toplam gen sayısı: 1000
+- Toplam hücre sayısı: 100
+- Hücre tipi sayısı: 5
+- Veri tipi: Single-cell RNA-seq sayım verileri
+- Veri dağılımı: Negatif binom dağılımı (mu=100, size=1)
+
+### 1.2 Hücre Tipi Dağılımı
+- 5 farklı hücre tipi (type1-type5)
+- Rastgele dağılımlı hücre tipleri
+- Dengeli hücre tipi dağılımı
+- Her hücre tipi için yaklaşık 20 hücre
+
+## 2. Hücre Tipi Eşleştirme Analizi
+### 2.1 DEG-Hücre Tipi Eşleştirme
+- Toplam eşleştirilen gen sayısı: 8 (anlamlı genler)
+- Her gen için:
+  * Hücre tipi ataması
+  * Ekspresyon seviyesi
+  * Hücre tipi özgüllüğü
+
+### 2.2 Hücre Tipi Özgüllük Analizi
+- Her gen için en yüksek ekspresyon gösteren hücre tipi belirlendi
+- Ekspresyon seviyeleri normalize edildi
+- Hücre tipi özgüllük skorları hesaplandı
+
+## 3. Hücre Tipi Oranları
+### 3.1 Proportions Analizi
+- Her hücre tipi için oranlar hesaplandı
+- Rastgele dağılım kullanıldı (runif)
+- Toplam oranlar 1'e normalize edildi
+- Hücre tipi dağılımı dengeli
+
+### 3.2 Önemli Bulgular
+1. Hücre tipi dağılımı homojen
+2. Her hücre tipi için yeterli sayıda hücre
+3. Gen ekspresyonu hücre tipi bazında değerlendirilebilir
+4. Mock veri gerçekçi dağılım gösteriyor
+
+## 4. Görselleştirme ve Sonuçlar
+### 4.1 Hücre Tipi Mapping Sonuçları
+- cell_type_mapping.csv dosyasında detaylı sonuçlar
+- Her gen için:
+  * Hücre tipi ataması
+  * Ekspresyon seviyesi
+  * Özgüllük skoru
+
+### 4.2 Hücre Tipi Oranları
+- cell_proportions.csv dosyasında oranlar
+- Her hücre tipi için:
+  * Proportions değeri
+  * Normalize edilmiş oran
+  * Standart hata
+
+## 5. Sonuç ve Öneriler
+### 5.1 Başarılı Noktalar
+- Mock veri başarıyla oluşturuldu
+- Hücre tipi eşleştirme tamamlandı
+- Oranlar hesaplandı
+- Sonuçlar kaydedildi
+
+### 5.2 İyileştirme Önerileri
+1. Gerçek single-cell verisi kullanılabilir
+2. Daha fazla hücre tipi eklenebilir
+3. Hücre tipi marker genleri entegre edilebilir
+4. Daha detaylı hücre tipi karakterizasyonu yapılabilir
+
+### 5.3 Sonraki Adımlar
+1. Gerçek single-cell verisi ile validasyon
+2. Hücre tipi spesifik pathway analizi
+3. Hücre tipi etkileşim ağları
+4. Spatyal transkriptomik entegrasyonu
+
+## 6. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~3 dakika
+
+## 7. Referanslar
+1. Tabula Muris Consortium (2018) Single-cell transcriptomics of 20 mouse organs
+2. Tabula Muris Senis Consortium (2020) A single-cell transcriptomic atlas characterizes ageing tissues
+3. Stuart T, et al. (2019) Comprehensive Integration of Single-Cell Data 

@@ -1,0 +1,99 @@
+# FAZ 6: İleri Görselleştirme ve Raporlama
+# Tarih: 23.05.2025
+
+## 1. İleri Görselleştirme Teknikleri
+### 1.1 İnteraktif Görselleştirmeler
+- Shiny uygulamaları
+- Plotly grafikleri
+- D3.js entegrasyonu
+- Dinamik filtreleme
+
+### 1.2 Çoklu Veri Görselleştirme
+- Gen ekspresyonu heatmap'leri
+- Pathway haritaları
+- Ağ görselleştirmeleri
+- Klinik veri grafikleri
+
+## 2. Raporlama ve Dokümantasyon
+### 2.1 Dinamik Raporlar
+- R Markdown raporları
+- HTML çıktıları
+- PDF raporları
+- İnteraktif dashboard'lar
+
+### 2.2 Veri Dokümantasyonu
+- Veri sözlüğü
+- Metodoloji açıklamaları
+- Kod dokümantasyonu
+- Versiyon kontrolü
+
+## 3. Veri Paylaşımı ve Erişim
+### 3.1 Veri Depolama
+- Yapılandırılmış veri formatları
+- Veri arşivleme
+- Yedekleme stratejileri
+- Güvenlik önlemleri
+
+### 3.2 Erişim Kontrolü
+- Kullanıcı yetkilendirme
+- Veri şifreleme
+- Erişim logları
+- Güvenlik protokolleri
+
+## 4. Görselleştirme Sonuçları
+### 4.1 İnteraktif Grafikler
+- Gen ekspresyonu profilleri
+- Pathway zenginleştirme
+- Klinik korelasyonlar
+- Biomarker performansı
+
+### 4.2 Statik Görselleştirmeler
+- Yayın kalitesinde grafikler
+- Poster görselleştirmeleri
+- Sunum slaytları
+- Rapor figürleri
+
+## 5. Önemli Bulgular
+### 5.1 Görselleştirme İçgörüleri
+1. Gen ekspresyon pattern'leri
+2. Pathway etkileşimleri
+3. Klinik korelasyonlar
+4. Biomarker performansı
+
+### 5.2 Raporlama İçgörüleri
+1. Veri kalitesi
+2. Analiz tutarlılığı
+3. Sonuç güvenilirliği
+4. Yorumlanabilirlik
+
+## 6. Sonuç ve Öneriler
+### 6.1 Başarılı Noktalar
+- İnteraktif görselleştirmeler
+- Kapsamlı raporlama
+- Veri yönetimi
+- Erişim kontrolü
+
+### 6.2 İyileştirme Önerileri
+1. Daha fazla interaktif özellik
+2. Gelişmiş veri güvenliği
+3. Otomatik raporlama
+4. Real-time güncelleme
+
+### 6.3 Sonraki Adımlar
+1. Web tabanlı dashboard
+2. Mobil uygulama
+3. API geliştirme
+4. Cloud entegrasyonu
+
+## 7. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~8 dakika
+
+## 8. Referanslar
+1. Chang W, et al. (2021) shiny: Web Application Framework for R
+2. Sievert C (2020) Interactive Web-Based Data Visualization with R, plotly, and shiny
+3. Xie Y, et al. (2021) R Markdown: The Definitive Guide
+4. Wickham H (2016) ggplot2: Elegant Graphics for Data Analysis 

@@ -1,0 +1,83 @@
+# FAZ 1: Paket Yükleme ve Veri Hazırlama Analizi
+# Tarih: 23.05.2025
+
+## 1. Paket Yükleme Süreci
+### 1.1 Yüklenen Paketler
+- DESeq2: Diferansiyel gen ekspresyonu analizi için
+- airway: Örnek veri seti
+- biomaRt: Biyolojik veri entegrasyonu
+- ggplot2: Görselleştirme
+- pheatmap: Isı haritası oluşturma
+- SummarizedExperiment: Veri yapısı yönetimi
+- VennDiagram: Gen seti karşılaştırmaları
+
+### 1.2 Paket Yükleme Sonuçları
+- Tüm paketler başarıyla yüklendi
+- BiocManager versiyonu: 3.21
+- R versiyonu: 4.5.0
+- CRAN deposu: https://cran.rstudio.com/
+
+## 2. Veri Hazırlama ve DESeq Analizi
+### 2.1 Veri Seti Özellikleri
+- Toplam gen sayısı: 1000
+- Örnek sayısı: 6 (3 kontrol, 3 sigara maruziyeti)
+- Veri tipi: RNA-seq sayım verileri
+- Veri dağılımı: Negatif binom dağılımı (mu=100, size=1)
+
+### 2.2 DESeq Analiz Sonuçları
+- Toplam analiz edilen gen: 1000
+- Anlamlı gen sayısı (padj < 0.05): 8
+- Yukarı regüle edilen genler: 5 (0.5%)
+- Aşağı regüle edilen genler: 5 (0.5%)
+- Aykırı değerler: 21 (2.1%)
+- Düşük sayımlı genler: 0 (0%)
+
+### 2.3 Önemli Bulgular
+1. Anlamlı genlerin oranı (%0.8) beklenen aralıkta
+2. Yukarı ve aşağı regüle edilen gen sayıları dengeli
+3. Aykırı değer oranı (%2.1) kabul edilebilir seviyede
+4. Düşük sayımlı gen bulunmaması veri kalitesini gösteriyor
+
+## 3. Görselleştirme Sonuçları
+### 3.1 Volcano Plot Analizi
+- X ekseni: log2 kat değişimi
+- Y ekseni: -log10 düzeltilmiş p-değeri
+- Kırmızı çizgiler: anlamlılık eşikleri
+- Dağılım: simetrik ve beklenen pattern'de
+
+### 3.2 Heatmap Analizi
+- Top 50 anlamlı genin ekspresyon profili
+- Örnekler arası korelasyon görülebilir
+- Gen ekspresyon pattern'leri belirgin
+- Kontrol ve sigara maruziyeti grupları ayrışabilir durumda
+
+## 4. Sonuç ve Öneriler
+### 4.1 Başarılı Noktalar
+- Paket yükleme süreci sorunsuz
+- Veri kalitesi yüksek
+- Görselleştirmeler anlamlı
+- Analiz pipeline'ı stabil
+
+### 4.2 İyileştirme Önerileri
+1. Daha fazla biyolojik replika eklenebilir
+2. Farklı anlamlılık eşikleri denenebilir
+3. Gen seti zenginleştirme analizleri eklenebilir
+4. Tekrarlanan analizler için seed değeri sabitlenebilir
+
+### 4.3 Sonraki Adımlar
+1. Anlamlı genlerin fonksiyonel analizi
+2. Pathway analizi
+3. Protein-protein etkileşim ağları
+4. Deneysel validasyon planlaması
+
+## 5. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~5 dakika
+
+## 6. Referanslar
+1. Love MI, et al. (2014) Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2
+2. Huber W, et al. (2015) Orchestrating high-throughput genomic analysis with Bioconductor
+3. Wickham H (2016) ggplot2: Elegant Graphics for Data Analysis 

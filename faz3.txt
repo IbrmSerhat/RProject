@@ -1,0 +1,95 @@
+# FAZ 3: Karşılaştırmalı Analiz ve Görselleştirme
+# Tarih: 23.05.2025
+
+## 1. DEG Karşılaştırma Analizi
+### 1.1 Veri Setleri
+- Sigara maruziyeti DEG'leri: 8 gen
+- Yaşlanma DEG'leri: 100 gen (mock veri)
+- Ortak genler: İki set arasındaki kesişim
+- Benzersiz genler: Her sete özgü genler
+
+### 1.2 Venn Diagram Analizi
+- İki set arasındaki ilişki görselleştirildi
+- Kesişim bölgesi: Ortak genler
+- Ayrık bölgeler: Set-spesifik genler
+- Renk kodlaması:
+  * Sigara maruziyeti: #440154FF
+  * Yaşlanma: #21908CFF
+
+## 2. Gen Ekspresyonu Karşılaştırması
+### 2.1 Ortak Genlerin Analizi
+- Ortak genlerin ekspresyon profilleri
+- Gruplar arası karşılaştırma:
+  * Sigara maruziyeti (2 örnek)
+  * Yaşlanma (2 örnek)
+- Ekspresyon pattern'leri
+- Grup içi varyasyon
+
+### 2.2 Heatmap Analizi
+- Gen ekspresyonu matrisi
+- Örnekler arası korelasyon
+- Gen kümeleri
+- Ekspresyon seviyeleri:
+  * Yüksek ekspresyon
+  * Orta ekspresyon
+  * Düşük ekspresyon
+
+## 3. Görselleştirme Sonuçları
+### 3.1 Venn Diagram
+- Başarıyla oluşturuldu
+- PNG formatında kaydedildi
+- Yüksek çözünürlük (3000x3000)
+- Net görsel ayrım
+
+### 3.2 Ekspresyon Heatmap
+- shared_genes_expression.pdf dosyasında
+- Ölçeklendirilmiş ekspresyon değerleri
+- Gen ve örnek etiketleri
+- Renk skalası:
+  * Kırmızı: Yüksek ekspresyon
+  * Beyaz: Orta ekspresyon
+  * Mavi: Düşük ekspresyon
+
+## 4. Önemli Bulgular
+### 4.1 Gen Seti Karşılaştırması
+1. Sigara maruziyeti ve yaşlanma etkileri farklı
+2. Ortak genlerin sayısı sınırlı
+3. Her durum için özgün gen setleri mevcut
+4. Biyolojik pathway'lerde örtüşme olabilir
+
+### 4.2 Ekspresyon Profilleri
+1. Gruplar arası belirgin farklar
+2. Grup içi tutarlılık
+3. Gen-spesifik pattern'ler
+4. Potansiyel biomarker'lar
+
+## 5. Sonuç ve Öneriler
+### 5.1 Başarılı Noktalar
+- Karşılaştırmalı analiz tamamlandı
+- Görselleştirmeler başarılı
+- Veri setleri entegre edildi
+- Sonuçlar kaydedildi
+
+### 5.2 İyileştirme Önerileri
+1. Daha fazla örnek eklenebilir
+2. Farklı karşılaştırma metrikleri kullanılabilir
+3. Zaman serisi analizi eklenebilir
+4. Fonksiyonel analizler genişletilebilir
+
+### 5.3 Sonraki Adımlar
+1. Fonksiyonel zenginleştirme analizi
+2. Protein-protein etkileşim ağları
+3. Deneysel validasyon
+4. Klinik korelasyonlar
+
+## 6. Teknik Notlar
+- R versiyonu: 4.5.0
+- İşletim sistemi: Windows 10
+- Çalışma dizini: C:/Users/ibrah/OneDrive/Belgeler/RProject
+- Analiz tarihi: 23.05.2025
+- Toplam çalışma süresi: ~2 dakika
+
+## 7. Referanslar
+1. Chen H, et al. (2018) VennDiagram: a package for the generation of highly-customizable Venn and Euler diagrams
+2. Kolde R (2019) pheatmap: Pretty Heatmaps
+3. Wickham H (2016) ggplot2: Elegant Graphics for Data Analysis 

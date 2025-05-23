@@ -1,0 +1,55 @@
+# R script for analyzing the impact of smoking and aging on mouse brain using Bioconductor
+
+# Load required packages
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install(c("DESeq2", "airway", "biomaRt", "ggplot2", "pheatmap", "TabulaMurisData", "TabulaMurisSenisData", "SummarizedExperiment"))
+
+library(DESeq2)
+library(ggplot2)
+library(pheatmap)
+library(TabulaMurisData)
+library(TabulaMurisSenisData)
+library(SummarizedExperiment)
+
+# Step 1: Load smokingMouse dataset (assume loaded as SummarizedExperiment)
+# (Replace with actual loading code when dataset is acquired)
+# smokingMouse <- load_smoking_mouse_dataset()
+
+# Step 2: Prepare DESeqDataSet
+# dds <- DESeqDataSetFromMatrix(countData = counts(smokingMouse),
+#                               colData = colData(smokingMouse),
+#                               design = ~ condition)
+# dds <- DESeq(dds)
+
+# Step 3: Extract differentially expressed genes (DEGs)
+# res <- results(dds)
+# resOrdered <- res[order(res$padj),]
+# sigGenes <- subset(resOrdered, padj < 0.05)
+
+# Step 4: Visualize results
+# pheatmap(assay(vst(dds))[rownames(sigGenes)[1:50], ])
+
+# Step 5: Load single-cell data
+# tabulaMuris <- TabulaMurisData(tissue = "brain", celltype = "all")
+# tabulaMurisSenis <- TabulaMurisSenisData(tissue = "brain")
+
+# Step 6: Map DEGs to cell types using single-cell data
+# (Simplified mock-up, detailed integration with Seurat or SingleR recommended)
+
+# Step 7: Estimate cell type proportions with CIBERSORTx
+# (Requires export of bulk data and running externally, import back results)
+# cibersortResults <- read.csv("cibersortx_output.csv")
+
+# Step 8: Compare DEG lists (Venn diagram)
+# (Requires gene lists for smoking vs aging, intersect them)
+# venn.diagram(...) 
+
+# Step 9: Plot gene expression overlap
+# shared_genes <- intersect(sigGenesSmoking$gene, sigGenesAging$gene)
+# ggplot(...) # Create comparison plots for shared genes
+
+# Note: Due to complexity, steps that involve large datasets or external tools like CIBERSORTx are outlined as pseudocode.
+
+# End of script
